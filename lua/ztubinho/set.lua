@@ -29,7 +29,7 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
---vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "80"
 
 vim.opt.cursorline = true
 vim.opt.cursorcolumn = true
@@ -42,3 +42,5 @@ vim.cmd('autocmd FileType tex set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 vim.cmd('autocmd FileType markdown set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent')
 vim.cmd('autocmd FileType md set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent')
 vim.cmd('autocmd FileType rust set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent')
+
+vim.cmd([[let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro']])
