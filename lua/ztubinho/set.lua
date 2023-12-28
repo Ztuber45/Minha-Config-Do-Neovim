@@ -1,6 +1,5 @@
 vim.opt.guicursor = ""
 
-
 vim.opt.number = true
 vim.opt.relativenumber = true
 
@@ -34,13 +33,13 @@ vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
 vim.opt.cursorcolumn = true
 
-vim.cmd('autocmd FileType * set tabstop=8 shiftwidth=8 softtabstop=8 expandtab smartindent')
-vim.cmd('autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent')
-vim.cmd('autocmd FileType html set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent')
-vim.cmd('autocmd FileType latex set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent')
-vim.cmd('autocmd FileType tex set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent')
-vim.cmd('autocmd FileType markdown set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent')
-vim.cmd('autocmd FileType md set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent')
-vim.cmd('autocmd FileType rust set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent')
+vim.cmd('autocmd FileType * set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent')
+vim.cmd('autocmd FileType c set tabstop=8 shiftwidth=8 softtabstop=8 expandtab smartindent')
+vim.cmd('autocmd FileType rust set tabstop=8 shiftwidth=8 softtabstop=8 expandtab smartindent')
+vim.cmd('autocmd FileType cpp set tabstop=8 shiftwidth=8 softtabstop=8 expandtab smartindent')
+vim.cmd('autocmd FileType make set noexpandtab')
 
+--relativenumber
 vim.cmd([[let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro']])
+
+vim.cmd([[let netrw_liststyle = 4]])
